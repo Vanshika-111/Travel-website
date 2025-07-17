@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #d9ae728e;
+}
+
+.main {
+    height: 80vh;
+    width: 99%;
+    background-image: url('images/paris.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+
+    
+}
+
+.text-content {
+    background-color: rgba(0, 0, 0, 0.267);
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    margin-left: 600px;
+    height:150px;
+    margin-right:950px;
+    margin-bottom: 300px;
+
+}
+.text-content p{
+    font-size: 27px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+.text-content h1 {
+    font-family:'Playfair Display', serif;
+    font-style:normal;
+    font-size: 50px;
+}
+.text-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-top: 10px;
+    
+
+}
+.text-content ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2d2d442c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+
+}
+.text-content ul li:hover {
+    background-color: #44445f;
+    transform: scale(1.1);
+}
+.text-content ul li a {
+    text-decoration: none;
+    color: white;
+}
+.scroll-bar {
+    background-color: #D9AE72;
+    width: 1780px;
+    padding: 25px 10px;
+    white-space: nowrap;
+    height:230px;
+    top:10px; 
+    right: 10px;
+    left: 10px;
+    position: relative;
+    border-radius:10px ;
+    margin-bottom: 10px;
+    
+    
+}
+.scroll-bar:hover{ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition:ease-in-out 0.3s;
+
+}
+
+.scroll-bar h2{
+    color:rgb(241, 239, 239);
+    gap:100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.scroll-bar p{
+    color: rgb(241, 239, 239);
+    font-size: 30px;
+    margin-top: 10px;
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+.Food{
+    background-color: rgba(0, 0, 0, 0);
+    width: 1900px;
+    padding: 25px 10px;
+    white-space: nowrap;
+    height:350px;
+    top: 200px; 
+    right: 50px;
+    left: 5px;
+}
+
+.Food ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 35px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 90px;
+}
+
+.Food ul li {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: #2d2d44;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+    height:250px;
+    width: 250px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.Food ul li:hover {
+    background-color: #44445f;
+    transform:scaleY(1.1) scaleX(1.1) translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+}
+.food-section{
+    background-color: #D9AE72;
+    width: 1780px;
+    padding: 25px 10px;
+    white-space: nowrap;
+    height: 450px;
+    top:10px; 
+    right: 100px;
+    left: 10px;
+    position: relative;
+    border-radius:10px ;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    
+}
+.food-section h2{
+    color:beige;
+    gap:100px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+
+}
+.food-section p{
+    color: rgb(241, 239, 239);
+    font-size: 20px;
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+.scrolling-bar{
+    background-color: #D9AE72;
+    width: 1780px;
+    padding: 25px 10px;
+    white-space: nowrap;
+    height:700px;
+    top:10px; 
+    right: 10px;
+    left: 10px;
+    position: relative;
+    border-radius:10px ;
+    margin-bottom: 20px;
+
+}
+.scrolling-bar:hover{ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition:ease-in-out 0.3s;
+
+}
+
+.scrolling-bar h2{
+    color:beige;
+    gap:100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.scrolling-bar p{
+    color: rgb(241, 239, 239);
+    font-size: 30px;
+    margin-top: 10px;
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    align-items: center;
+    margin-left: 50px;
+
+}
+.scrolling-bar h3{
+    color:beige;
+    gap:100px;
+    text-align: left;
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+.site-footer {
+  background-color: #8b5e3c;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h3,
+.footer-middle h4,
+.footer-right h4 {
+  margin-bottom: 15px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li a,
+.footer-right a {
+  color: #ffe6cc;
+  text-decoration: none;
+}
+
+.footer-middle ul li a:hover,
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
