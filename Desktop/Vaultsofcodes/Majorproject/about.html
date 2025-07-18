@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Tales of Trails</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Blurred Background -->
+  <div class="blurred-background"></div>
+  <div class="overlay"></div>
+
+  <!-- About Section -->
+  <div class="about-tales">
+    <h1>ABOUT</h1>
+    <h2 class="scroll-appear">Tales of Trails</h2>
+    <h4 class="tagline">Where every trail tells a story.</h4>
+
+    <p>
+      <strong>Tales of Trails</strong> is more than a travel blog — it's a collection of living, breathing journeys. Our mission is to awaken your inner explorer and connect you to cultures, cuisines, and corners of the world waiting to be discovered.
+    </p>
+    <p>
+      From the pastel streets of Jaipur to the buzzing markets of Cairo, each destination is handpicked with passion. We don’t just share places — we share the essence of being there. Hidden cafés, local food gems, underrated towns — all part of the story.
+    </p>
+    <p>
+      We invite wanderers, storytellers, and food lovers to join our growing community. Let your curiosity guide you as you walk the tales carved into every trail.
+    </p>
+
+    <div class="cta">
+      <a href="register.html"><i class="fa-solid fa-compass"></i> Start Your Journey</a>
+    </div>
+  </div>
+
+  <script>
+    const heading = document.querySelector('.scroll-appear');
+    window.addEventListener('scroll', () => {
+      const top = heading.getBoundingClientRect().top;
+      const height = window.innerHeight;
+      if (top < height - 100) {
+        heading.classList.add('show');
+      }
+    });
+  </script>
+</body>
+</html>

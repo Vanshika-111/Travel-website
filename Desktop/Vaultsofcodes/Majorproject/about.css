@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Blurred background image */
+.blurred-background {
+  background-image: url('your-background-image.jpg'); /* Replace with actual image */
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+
+/* Overlay for dimming effect */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.4);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* Main about section */
+.about-tales {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  margin: 100px auto;
+  width: 90%;
+  max-width: 880px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+/* Heading */
+.about-tales h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+  margin-top:10px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+.about-tales h2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tagline */
+.about-tales .tagline {
+  font-size: 20px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Paragraphs */
+.about-tales p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #2e2e2e;
+  margin-bottom: 22px;
+}
+
+/* CTA button */
+.cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta a {
+  background: #f18805;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.cta a:hover {
+  background: #d76d04;
+}
+
+.cta i {
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-tales {
+    padding: 40px 20px;
+  }
+
+  .about-tales h2 {
+    font-size: 36px;
+  }
+
+  .about-tales p {
+    font-size: 16px;
+  }
+}
